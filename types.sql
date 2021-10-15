@@ -12,6 +12,7 @@ INSERT INTO types VALUES(DEFAULT, 'borough');
 INSERT INTO types VALUES(DEFAULT, 'village');
 INSERT INTO types VALUES(DEFAULT, 'unified government');
 INSERT INTO types VALUES(DEFAULT, 'consolidated government');
+INSERT INTO types VALUES(DEFAULT, '(nothing)');
 INSERT INTO types VALUES(DEFAULT, 'urban county');
 INSERT INTO types VALUES(DEFAULT, 'metro government');
 INSERT INTO types VALUES(DEFAULT, 'metropolitan government');

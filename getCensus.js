@@ -28,7 +28,7 @@ const getCensus = async () => {
     while (!(name[0].endsWith(")") || name[0][0].toUpperCase() === name[0][0] || name[0].slice(0, 2) === "d'")) {
       type.unshift(name.shift());
     };
-    type = type.join(" ");
+    type = type.join(" ") || "(nothing)";
     types.add(type);
     // Now that garbage has been trimmed, re-reverse this.
     name = name.reverse().join(" ");
@@ -38,6 +38,7 @@ const getCensus = async () => {
     cities.push({name, state, population, type});
   });
   types.delete("");
+  types.add("(nothing)");
   types = Array.from(types);
   states =Array.from(states).sort();
   cities = cities.map(city => {
